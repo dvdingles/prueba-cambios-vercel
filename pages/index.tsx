@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       <ambientLight intensity={.5} />
       <pointLight position={[10, 10, 10]} />
       <Suspense fallback={null}>
-        <Solo position={[0,0,0]}/>
+        <Solo position={[0,-.05,0]}/>
       </Suspense>
       <OrbitControls />
     </Canvas>
