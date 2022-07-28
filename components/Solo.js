@@ -7,7 +7,7 @@ import { useGLTF } from "@react-three/drei";
 
 export default function Solo({ ...props }) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/mesh.gltf");
+  const { nodes, materials } = useGLTF("/imageEditor.gltf");
   return (
     <group ref={group} {...props} dispose={null}>
       <mesh
@@ -77,4 +77,4 @@ export default function Solo({ ...props }) {
   );
 }
 
-useGLTF.preload("/mesh.gltf");
+useGLTF.preload("/imageEditor.gltf");
